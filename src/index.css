@@ -1,13 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Mukta Malar', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  font-size: 1.5rem;
+  margin: 30px;
+  padding: 10px;
+}
+
+section:nth-child(even) {
+  background: linear-gradient(to bottom right, #b9eed1, #61ebc1, #17eb88, #00b661);
+}
+
+section:nth-child(odd) {
+  background: #fff
+}
+
+/* Navbar */
+
+#tab-1:hover {
+  background-color: #cc0909;
+  color: #fff;
+  transition: 0.5s background-color linear;
+}
+
+#tab-2:hover {
+  background-color: #1b40e4;
+  color: #fff;
+  transition: 0.5s background-color linear;
+}
+
+#tab-3:hover {
+  background-color: #e2d40d;
+  color: #fff;
+  transition: 0.5s background-color linear;
+}
+
+#tab-4:hover {
+  background-color: #09a110;
+  color: #fff;
+  transition: 0.5s background-color linear;
+}
+
+/* Home */
+
+.home-title {
+  font-size: 4.5rem;
+}
+
+.home-subtitle {
+  font-size: 2rem;
+}
+
+.home-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.fade {
+  animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+/* About Me */
+
+.icons {
+  display: inline-flex;
+  padding: 10px;
+  margin: 10px;
+  color: #000;
+  font-size: 3rem;
+}
+
+.skills-title {
+  font-size: 3.0rem;
+  color: #fff;
+}
+
+.projects-title {
+  font-size: 3.0rem;
+  color: #000;
+}
+
+.skill-icons {
+  font-size: 2rem;
+}
+
+/* Projects */
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.image-container:hover img {
+  opacity: 0.5;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+  width: 100%;
+}
+
+.image-container:hover .text-overlay {
+  opacity: 1;
+}
+
+.text-overlay p {
+  color: #1f1f1f;
+  font-size: 1rem;
+}
+
+.view-overlay {
+  z-index: 3;
 }
