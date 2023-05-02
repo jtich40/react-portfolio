@@ -1,5 +1,5 @@
 import React from 'react';
-import Jared from '../assets/images/555_hq.jpg';
+import Jared from '../images/555_hq.jpg';
 
 function About() {
     return (

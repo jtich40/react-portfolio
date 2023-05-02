@@ -1,6 +1,6 @@
 import React from 'react';
-import Mongoose from '../assets/images/mongoose.png';
-import Insomnia from '../assets/images/insomnia.png';
+import Mongoose from '../images/mongoose.png';
+import Insomnia from '../images/insomnia.png';
 
 function Skills() {
     return(
