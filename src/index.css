@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css");
 
 body {
   font-family: 'Mukta Malar', sans-serif;
@@ -8,14 +10,6 @@ p {
   font-size: 1.5rem;
   margin: 30px;
   padding: 10px;
-}
-
-section:nth-child(even) {
-  background: linear-gradient(to bottom right, #b9eed1, #61ebc1, #17eb88, #00b661);
-}
-
-section:nth-child(odd) {
-  background: #fff
 }
 
 /* Navbar */

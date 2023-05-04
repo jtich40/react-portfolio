@@ -4,7 +4,9 @@ import Insomnia from '../images/insomnia.png';
 
 function Skills() {
     return(
-        <section className="container-fluid min-vh-100 text-center" id="skills">
+        <section className="container-fluid min-vh-100 text-center" id="skills" style={{
+            background: 'linear-gradient(to bottom right, #b9eed1, #61ebc1, #17eb88, #00b661)'
+            }}>
         <div className="row justify-content-center pt-3">
             <h2 className="skills-title">Skills</h2>
         </div>
